@@ -1,0 +1,47 @@
+.main{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkblue;
+}
+.shark__container{
+    margin-top: 20px;
+    width: 100px;
+    height: 300px;
+    transform: rotate(-30deg);
+    transition: all 1s linear ;
+}
+.shark{
+    align-self: start;
+    width: 100px;
+    height: 100px;
+}
+
+.shark_position_left{
+    transform: rotate(-30deg) translateX(-90px);
+
+}
+.shark_position_center{
+    transform: rotate(0deg);
+}
+.shark_position_right{
+    transform: rotate(30deg) translateX(90px);
+
+}
+@keyframes spin {
+    from {
+
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes transform{
+    100% {
+        transform: rotate(100deg);
+    }
+}
